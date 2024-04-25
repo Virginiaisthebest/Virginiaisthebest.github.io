@@ -27,10 +27,14 @@ body {
   }
 
   header {
+    position: sticky;
+    top: 0;
+    z-index: 10; //為了讓bar在最上層
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     background-color: white;
+    box-shadow: 0 10px 6px -6px #777;
 
     section.logo {
       display: flex;
