@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a magic place for traveller to create your own travel plan! Feel free to take a look and manage your own map :D"
+    />
+    <meta name="keywords" content="travel, trip, explore, world, adventure" />
+    <meta name="author" content="Virginia Fang" />
+    <!-- <meta http-equiv="refresh" content="15" /> -->
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    <link rel="icon" type="image/x-icon" href="./Icons/favicon.ico" />
+    <title>Virginia's Travel World</title>
+    <!-- cdn.js font awesome needs to put before style -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <img class="fixed-image" src="./images/budapest2.jpeg" alt="fixed-image" />
+    <header>
+      <section class="logo">
+        <img src="./images/網站Logo.svg" alt="website's logo" />
+        <h1>Virginia Travel Story</h1>
+      </section>
+      <nav>
+        <ul>
+          <li>
+            <!-- i class put after anchor tag, before "Family" -->
+            <a href="#" target="_self" title="Click"
+              ><i class="fa-solid fa-house-chimney-window"></i> Family</a
+            >
+          </li>
+          <li>
+            <a href="#" target="_self" title="Click"
+              ><i class="fa-solid fa-user-group"></i> Friends</a
+            >
+          </li>
+          <li>
+            <a href="#" target="_self" title="Click"
+              ><i class="fa-brands fa-rocketchat"></i> Chat</a
+            >
+          </li>
+          <li>
+            <a href="#" target="_self" title="Click"
+              ><i class="fa-solid fa-headset"></i> Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="background-image">
+        <div class="filter"></div>
+        <h3>
+          Welcome to this secrect garden! <br />Immerse your soul and always
+          keep doing only good things :D
+        </h3>
+      </section>
+      <!-- 白色部分加四個圓圈 -->
+      <section class="info-circle">
+        <h3>Stories</h3>
+        <!-- 四個圓圈 -->
+        <div class="circles">
+          <!-- 各自的圓圈 -->
+          <div class="circle">
+            <img title="Click" src="./images/finland1.jpeg" alt="finlandView" />
+            <p>Finland &#127467;&#127470;</p>
+          </div>
+          <div class="circle">
+            <img title="Click" src="./images/greece1.jpeg" alt="greeceView" />
+            <p>Greece &#127468;&#127479;</p>
+          </div>
+          <div class="circle">
+            <img title="Click" src="./images/paris11.jpeg" alt="parisView" />
+            <p>France &#127467;&#127479;</p>
+          </div>
+          <div class="circle">
+            <img
+              title="Click"
+              src="./images/budapest1.jpeg"
+              alt="budapesView"
+            />
+            <p>Hungary &#127469;&#127482;</p>
+          </div>
+        </div>
+      </section>
+      <section class="empty-container">
+        <h3>
+          The truth is.......<br />You never know how brave you are until being
+          brave is your only choice!
+        </h3>
+      </section>
+
+      <section class="google-map">
+        <div class="Taiwan-flag-group">
+          <h3>
+            Start from a beautiful Formosa Island: Taiwan &#127481;&#127484;
+          </h3>
+        </div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7490027.385560402!2d117.8819112!3d23.5598247!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346ef3065c07572f%3A0xe711f004bf9c5469!2sTaiwan!5e0!3m2!1sen!2stw!4v1713966996779!5m2!1sen!2stw"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </section>
+    </main>
+    <footer>
+      <section class="logo">
+        <img src="./images/網站Logo.svg" alt="logo" />
+        <h3>Virginia Fang&copy;</h3>
+      </section>
+
+      <section class="social-media">
+        <a
+          href="https://www.facebook.com/profile.php?id=100003671076788"
+          target="_blank"
+          ><img title="Click" src="./Icons/facebook.svg" alt="facebook"
+        /></a>
+        <a href="https://www.instagram.com/virginia20000814/" target="_blank"
+          ><img title="Click" src="./Icons/instagram.svg" alt="instagram"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/yu-cing-fang-v1314520/"
+          target="_blank"
+          ><img title="Click" src="./Icons/linkedin.svg" alt="linkedin"
+        /></a>
+        <a
+          href="https://www.youtube.com/channel/UCbugkSf_ykjsGIK-q-EimyA"
+          target="_blank"
+          ><img
+            title="Click"
+            class="youtube"
+            src="./Icons/youtube.svg"
+            alt="facebook"
+        /></a>
+      </section>
+    </footer>
+
+    <!-- <script>
+      setInterval(() => {
+        let topBackground = document.querySelector("section.background-img");
+        if (
+          topBackground.style.backgroundImage ==
+          'url("../images/holland1.jpeg")'
+        ) {
+          topBackground.style.backgroundImage =
+            'url("../images/finland1.jpeg")';
+        } else if (
+          topBackground.style.backgroundImage ==
+          'url("../images/finland1.jpeg")'
+        ) {
+          topBackground.style.backgroundImage =
+            'url("../images/finland2.jpeg")';
+        } else {
+          topBackground.style.backgroundImage =
+            'url("../images/holland1.jpeg")';
+        }
+      }, 1000);
+    </script> -->
+  </body>
+</html>
