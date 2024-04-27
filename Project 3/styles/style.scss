@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  cursor: default;
+}
+
+p {
+  cursor: default;
+}
+
+$themeColor: rgb(192, 54, 192);
+
+main {
+  nav.back-button {
+    background-color: rgb(255, 191, 255);
+    width: 4.5rem;
+    border-radius: 12px;
+    height: 2rem;
+    margin-left: 0.5rem;
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      padding: 0.5rem;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+
+      &:hover {
+        color: black;
+        transition: all 0.1s ease-in-out;
+        transform: scale(1.25);
+      }
+    }
+  }
+  section.profile {
+    min-height: 70vh; //版面需要占據較大的畫面
+    display: flex; //為了讓亮個div並排
+    background-color: white;
+    flex-wrap: wrap; //文字可以適性調整長度
+    justify-content: center; //為了讓兩個div置中
+    align-items: center; //為了讓兩個div置中
+
+    div.first-intro {
+      //   border: 2px solid black; //讓div變明顯
+      flex-basis: 550px; //客製化div.first-intro的寬度
+
+      h1 {
+        font-size: 3rem;
+      }
+      h2 {
+        font-size: 1rem;
+      }
+    }
+
+    div.pic {
+      //border: 2px solid black; //讓div變明顯
+      flex-basis: 300px; //客製化div.pic的寬度
+      img {
+        width: 100%; //使圖片的寬度就等於div.pic設定的寬度
+      }
+    }
+  }
+  section.about-me {
+    text-align: center;
+    background-color: rgb(246, 178, 238);
+    padding: 3rem 0.5rem;
+    div.discription {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        font-weight: bold;
+        font-size: 3rem;
+      }
+      p {
+        width: 70%;
+      }
+    }
+
+    div.progressbar {
+      //   border: 2px solid black;
+      flex-direction: column;
+      justify-content: center;
+
+      div.html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        div.progress {
+          flex-basis: 300px;
+        }
+        p {
+          margin: 0;
+          padding-right: 1rem;
+        }
+      }
+      div.css {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        div.progress {
+          flex-basis: 300px;
+        }
+        p {
+          margin: 0;
+          padding-right: 1rem;
+        }
+      }
+      div.javascript {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        div.progress {
+          flex-basis: 300px;
+        }
+        p {
+          margin: 0;
+          padding-right: 1rem;
+        }
+      }
+      div.python {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        div.progress {
+          flex-basis: 300px;
+        }
+        p {
+          margin: 0;
+          padding-right: 1rem;
+        }
+      }
+      div.java {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.5rem;
+        div.progress {
+          flex-basis: 300px;
+        }
+      }
+      p {
+        margin: 0;
+        padding-right: 1rem;
+      }
+    }
+  }
+
+  section.resume {
+    min-height: 70vh;
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem;
+    align-items: center;
+
+    div.table-info {
+      flex-basis: 50%;
+      h2 {
+        font-weight: bold;
+        font-size: 5rem;
+      }
+      table.info {
+        tr {
+          cursor: default;
+          border-top: 2px solid black;
+          th {
+            padding: 1rem;
+          }
+          td {
+            padding: 1rem;
+          }
+        }
+      }
+    }
+    div.resume-pic {
+      flex-basis: 50%;
+
+      img {
+        width: 100%;
+        height: 90%;
+        margin-left: 1.5rem;
+      }
+    }
+  }
+}

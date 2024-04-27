@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  cursor: default;
+}
+
+p {
+  cursor: default;
+}
+
+main nav.back-button {
+  background-color: rgb(255, 191, 255);
+  width: 4.5rem;
+  border-radius: 12px;
+  height: 2rem;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main nav.back-button a {
+  padding: 0.5rem;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+main nav.back-button a:hover {
+  color: black;
+  transition: all 0.1s ease-in-out;
+  transform: scale(1.25);
+}
+main section.profile {
+  min-height: 70vh;
+  display: flex;
+  background-color: white;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+main section.profile div.first-intro {
+  flex-basis: 550px;
+}
+main section.profile div.first-intro h1 {
+  font-size: 3rem;
+}
+main section.profile div.first-intro h2 {
+  font-size: 1rem;
+}
+main section.profile div.pic {
+  flex-basis: 300px;
+}
+main section.profile div.pic img {
+  width: 100%;
+}
+main section.about-me {
+  text-align: center;
+  background-color: rgb(246, 178, 238);
+  padding: 3rem 0.5rem;
+}
+main section.about-me div.discription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main section.about-me div.discription h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+main section.about-me div.discription p {
+  width: 70%;
+}
+main section.about-me div.progressbar {
+  flex-direction: column;
+  justify-content: center;
+}
+main section.about-me div.progressbar div.html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+main section.about-me div.progressbar div.html div.progress {
+  flex-basis: 300px;
+}
+main section.about-me div.progressbar div.html p {
+  margin: 0;
+  padding-right: 1rem;
+}
+main section.about-me div.progressbar div.css {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+main section.about-me div.progressbar div.css div.progress {
+  flex-basis: 300px;
+}
+main section.about-me div.progressbar div.css p {
+  margin: 0;
+  padding-right: 1rem;
+}
+main section.about-me div.progressbar div.javascript {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+main section.about-me div.progressbar div.javascript div.progress {
+  flex-basis: 300px;
+}
+main section.about-me div.progressbar div.javascript p {
+  margin: 0;
+  padding-right: 1rem;
+}
+main section.about-me div.progressbar div.python {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+main section.about-me div.progressbar div.python div.progress {
+  flex-basis: 300px;
+}
+main section.about-me div.progressbar div.python p {
+  margin: 0;
+  padding-right: 1rem;
+}
+main section.about-me div.progressbar div.java {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+main section.about-me div.progressbar div.java div.progress {
+  flex-basis: 300px;
+}
+main section.about-me div.progressbar p {
+  margin: 0;
+  padding-right: 1rem;
+}
+main section.resume {
+  min-height: 70vh;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+  align-items: center;
+}
+main section.resume div.table-info {
+  flex-basis: 50%;
+}
+main section.resume div.table-info h2 {
+  font-weight: bold;
+  font-size: 5rem;
+}
+main section.resume div.table-info table.info tr {
+  cursor: default;
+  border-top: 2px solid black;
+}
+main section.resume div.table-info table.info tr th {
+  padding: 1rem;
+}
+main section.resume div.table-info table.info tr td {
+  padding: 1rem;
+}
+main section.resume div.resume-pic {
+  flex-basis: 50%;
+}
+main section.resume div.resume-pic img {
+  width: 100%;
+  height: 90%;
+  margin-left: 1.5rem;
+}/*# sourceMappingURL=style.css.map */
