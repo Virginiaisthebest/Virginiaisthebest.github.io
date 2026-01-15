@@ -354,81 +354,80 @@ setInterval(function () {
 <script>
 /**
  * Google Apps Script Web App 的 API URL
- * 請替換成你實際部署後取得的 URL
+ * 此 URL 指向已部署的 Web App（需設定為「任何人可存取」）
  */
-const API_URL = "https://script.google.com/macros/s/AKfycbxVOda21I2uR2SdRvMK_-UKNrP-xSlm-TtzMJQ65RbD5Qypf_sxBTemIKSNzMPmnsoBzQ/exec";
+const API_URL = "https://script.google.com/macros/s/AKfycbzHVOKn2vLe6i5lmS5urnoA3EbzcW24vsK5pDy35d-GBKkCxnYcgu0-oefsIVOjyNwmWQ/exec";
 
 /**
  * 監聽表單送出事件
- * 當使用者點擊「提交」時，會執行此 function
+ * 當使用者點擊「提交」按鈕時會觸發
  */
 document.getElementById("infoForm").addEventListener("submit", function(e) {
 
-  // 阻止表單預設行為（避免頁面重新整理）
+  // 阻止表單預設送出行為（避免頁面重新整理或跳轉）
   e.preventDefault();
 
   /**
-   * 從表單欄位中取得使用者輸入的資料
-   * 並整理成一個物件，準備送給後端 API
+   * 建立 URLSearchParams 物件
+   * 這種格式會以 application/x-www-form-urlencoded 傳送資料
+   * 屬於「Simple Request」，不會觸發 CORS preflight
    */
-  const data = {
-    surname: document.getElementById("surname").value.trim(),     // 姓氏
-    firstname: document.getElementById("firstname").value.trim(), // 名字
-    email: document.getElementById("email").value.trim(),         // 電子信箱
-    phone: document.getElementById("phone").value.trim(),         // 手機號碼
-    agreement: document.getElementById("agreement").checked       // 是否勾選同意條款（Boolean）
-  };
+  const formData = new URLSearchParams();
+
+  // 將表單欄位的值依序加入 formData
+  formData.append("surname", document.getElementById("surname").value.trim());     // 姓氏
+  formData.append("firstname", document.getElementById("firstname").value.trim()); // 名字
+  formData.append("email", document.getElementById("email").value.trim());         // 電子信箱
+  formData.append("phone", document.getElementById("phone").value.trim());         // 手機號碼
+  formData.append("agreement", document.getElementById("agreement").checked);       // 是否同意條款（Boolean）
 
   /**
- * 使用 Fetch API 將表單資料送到 Google Apps Script Web App
- * 這個版本是「除錯用」，目的是先確認後端實際回傳了什麼內容
- */
-fetch(API_URL, {
-  method: "POST", // 使用 POST 方法送出資料
-  headers: {
-    // 告知後端：送出的資料格式為 JSON
-    "Content-Type": "application/json"
-  },
-  // 將 JavaScript 物件轉成 JSON 字串後放入 request body
-  body: JSON.stringify(data)
-})
+   * 使用 Fetch API 將表單資料送到 Google Apps Script
+   * 注意：
+   * - 不設定 headers
+   * - 不使用 JSON
+   * 這樣瀏覽器就不會送 OPTIONS preflight，可避免 CORS 問題
+   */
+  fetch(API_URL, {
+    method: "POST", // 使用 POST 方法
+    body: formData  // 直接傳送 URLSearchParams
+  })
 
-/**
- * 這裡先使用 res.text() 而不是 res.json()
- * 原因：
- * - 如果後端回傳的不是合法 JSON（例如 HTML 錯誤頁、403 訊息）
- * - res.json() 會直接拋出例外，導致進入 catch
- * - 使用 res.text() 可以直接看到後端的「原始回應內容」
- */
-.then(res => res.text())
+  /**
+   * 取得後端回傳的純文字內容
+   * （Apps Script 預設回傳 text）
+   */
+  .then(res => res.text())
 
-/**
- * 成功接收到後端回應後執行
- * text 即為後端實際回傳的內容（不論是 JSON、HTML 或純文字）
- */
-.then(text => {
-  // 將原始回應輸出到瀏覽器 Console，方便除錯
-  console.log("API raw response:", text);
+  /**
+   * 成功收到後端回應後執行
+   * text 為後端實際回傳的內容
+   */
+  .then(text => {
+    // 將後端回傳內容印到 Console，方便除錯或驗證
+    console.log("API response:", text);
 
-  // 同時以 alert 顯示，方便快速確認回傳內容
-  alert(text);
-})
+    // 顯示送出成功訊息給使用者
+    alert("送出成功！");
 
-/**
- * 當發生錯誤時（例如：
- * - 網路問題
- * - API URL 錯誤
- * - CORS 問題
- * - fetch 本身執行失敗）
- * 就會進到這個區塊
- */
-.catch(err => {
-  // 將錯誤詳細資訊輸出到 Console，方便工程師查看
-  console.error("Fetch error:", err);
+    // 成功後清空表單內容
+    document.getElementById("infoForm").reset();
+  })
 
-  // 提示使用者系統發生錯誤
-  alert("系統錯誤，請稍後再試");
-});
+  /**
+   * 當發生錯誤時（例如：
+   * - 網路中斷
+   * - API URL 錯誤
+   * - Web App 未正確部署）
+   * 就會進入這個區塊
+   */
+  .catch(err => {
+    // 將錯誤資訊輸出到 Console，方便開發者除錯
+    console.error(err);
+
+    // 顯示錯誤提示給使用者
+    alert("系統錯誤，請稍後再試");
+  });
 });
 </script>
 </body>
