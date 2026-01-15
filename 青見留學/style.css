@@ -399,7 +399,7 @@ h1, h2, h3 {
     margin-bottom: 30px;
 }
 
-/* 取得更多資訊區塊-"取得更多資訊"文字 */ 
+/* 取得更多資訊區塊-"取得更多資訊"h2文字 */ 
 .form-section h2{
     text-align: left;
     color: #000000;
@@ -408,7 +408,7 @@ h1, h2, h3 {
     cursor: default;
 }
 
-/*取得更多資訊區塊-"個人資訊" 文字*/ 
+/*取得更多資訊區塊-"個人資訊" h3文字*/ 
 .form-section h3{
     color: #000000;
     text-align: left;
@@ -416,6 +416,12 @@ h1, h2, h3 {
     padding-left: 1rem;
     font-size: 1.5rem;
     cursor: default;
+}
+
+/*取得更多資訊區塊-"個人資訊" 輸入格提示文字顏色*/ 
+input::placeholder {
+  color: #1c6c95;
+  font-style: italic;
 }
 
 /*取得更多資訊-表格欄位區塊*/ 
