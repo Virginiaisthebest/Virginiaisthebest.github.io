@@ -411,11 +411,23 @@ h1, h2, h3, p, th, td {
     margin-bottom: 30px;
 }
 
+.Consulting-icon {
+    display: flex;
+    align-items: center;  /* 垂直置中 */
+    padding-left: 1%;
+}
+
+.Consulting-icon-img {
+    width: 40px;          /* 圖示寬度 */
+    height: 40px;         /* 圖示高度 */
+}
+
 /* 取得更多資訊區塊-"取得更多資訊"h2文字 */ 
 .form-section h2{
     text-align: left;
     color: #000000;
     margin: 1rem;
+    margin-left: 0.5%;
     font-size: 2rem;
     cursor: default;
 }
@@ -434,6 +446,19 @@ h1, h2, h3, p, th, td {
 input::placeholder {
   color: #1c6c95;
   font-style: italic;
+}
+
+/* 錯誤訊息 */
+.error-msg {
+    color: red;
+    font-size: 0.85rem;
+    display: none;
+    margin-top: 5px;
+}
+
+/* 錯誤時 input 紅框 */
+.input-error {
+    border: 1px solid red !important;
 }
 
 /*取得更多資訊-表格欄位區塊*/ 
@@ -464,6 +489,23 @@ input::placeholder {
     border-radius: 5px;
     border: 1px solid #ccc;
     background-color: #D9D9D9;
+}
+
+/* 備註欄位整排顯示 */
+.form-section .input-group.full-width {
+    width: 100%;
+}
+
+/* 備註 textarea 樣式 */
+.form-section .input-group textarea {
+    width: 95%;
+    min-height: 180px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: vertical; /* 只允許上下拉 */
+    background-color: #D9D9D9;
+    font-family: inherit;
 }
 
 /*取得更多資訊-表格checkbox*/ 
