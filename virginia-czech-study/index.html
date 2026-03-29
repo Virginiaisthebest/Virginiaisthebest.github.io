@@ -1,0 +1,833 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- chrome上的簡介 -->
+    <meta
+      name="description"
+      content="Welcome to Virginia Exchange Agency! Don't hesitate to browse our website and get to know us more! It is time to start your exchange life with us :D"
+    />
+
+    <!-- chrome被搜索的keyword -->
+    <meta
+      name="keywords"
+      content="Czech, Czech Republic, Exchange student in Czech, Exchange life in Czech, Exchange in Czech, Czech exchange agency"
+    />
+
+    <!-- 作者 -->
+    <meta name="author" content="Virginia Fang" />
+
+    <!-- 同意被機器人爬 -->
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+
+    <!-- chrome頁籤上的icon -->
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="./favicon_exchange/favicon.ico"
+    />
+
+    <!-- chrome頁籤上的文字顯示 -->
+    <title>遇晴捷克留學諮詢 Virginia Czech Study & Travel Abroad</title>
+
+    <!-- 套用CSS檔案 -->
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <!-- 首頁的導覽欄位 -->
+    <header>
+      <div class="container">
+        <div class="header">
+          <!-- 標題區 -->
+          <div class="title-group">
+            <h1>遇晴捷克留學諮詢</h1>
+            <span id="mian_title_English"
+              >Virginia Czech Study & Travel Abroad</span
+            >
+          </div>
+
+          <!-- 漢堡按鈕（手機才顯示） -->
+          <div class="menu-toggle" id="menu-toggle">☰</div>
+
+          <!-- 導覽列 -->
+          <nav class="nav-a" id="nav-menu">
+            <a href="visa-application.html">
+              <div class="nav-top">
+                <img src="./Picture/Visa.png" />
+                <span>簽證申請</span>
+              </div>
+              <span class="nav-en">Visa Application</span>
+            </a>
+
+            <a href="czech-news.html">
+              <div class="nav-top">
+                <img src="./Picture/newspaper.png" />
+                <span>捷克大小事</span>
+              </div>
+              <span class="nav-en">Czech's News</span>
+            </a>
+
+            <a href="know-czech.html">
+              <div class="nav-top">
+                <img src="./Picture/Czech-flag-removebg-preview.png" />
+                <span>認識捷克</span>
+              </div>
+              <span class="nav-en">Know Czech</span>
+            </a>
+
+            <a href="about-us.html">
+              <div class="nav-top">
+                <img src="./Picture/circle-of-friends.png" />
+                <span>關於我們</span>
+              </div>
+              <span class="nav-en">About Us</span>
+            </a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- 首頁的幻燈片位置 -->
+    <div class="slideshow">
+      <div class="slide__item fades">
+        <div class="slide__pagenumber">1 / 6</div>
+        <img src="./Picture/Prague.jpg" />
+        <div class="slide__content">Hello page 1</div>
+      </div>
+      <div class="slide__item fades">
+        <div class="slide__pagenumber">2 / 6</div>
+        <img src="./Picture/Brno.jpg" />
+        <div class="slide__content">Hello page 2</div>
+      </div>
+      <div class="slide__item fades">
+        <div class="slide__pagenumber">3 / 6</div>
+        <img src="./Picture/Trebic.jpg" />
+        <div class="slide__content">Hello page 3</div>
+      </div>
+      <div class="slide__item fades">
+        <div class="slide__pagenumber">4 / 6</div>
+        <img src="./Picture/Ostrava.jpg" />
+        <div class="slide__content">Hello page 4</div>
+      </div>
+      <div class="slide__item fades">
+        <div class="slide__pagenumber">5 / 6</div>
+        <img src="./Picture/Olomouc.jpg" />
+        <div class="slide__content">Hello page 5</div>
+      </div>
+      <div class="slide__item fades">
+        <div class="slide__pagenumber">6 / 6</div>
+        <img src="./Picture/Zlin.jpg" />
+        <div class="slide__content">Hello page 6</div>
+      </div>
+
+      <a id="prev" class="slide__arraw slide__arraw--prev"> ❮ </a>
+      <a id="next" class="slide__arraw slide__arraw--next"> ❯ </a>
+
+      <div class="slide__dot">
+        <div class="dot" data-value="1"></div>
+        <div class="dot" data-value="2"></div>
+        <div class="dot" data-value="3"></div>
+        <div class="dot" data-value="4"></div>
+        <div class="dot" data-value="5"></div>
+        <div class="dot" data-value="6"></div>
+      </div>
+    </div>
+
+    <!-- 首頁的我們的服務 -->
+    <section class="OurServiceTitle">
+      <div class="OurServiceTitle-container">
+        <div class="line"></div>
+        <h2>我們的服務</h2>
+        <div class="line"></div>
+      </div>
+    </section>
+
+    <!-- 首頁的服務項目 -->
+    <section class="services-section">
+      <div class="service-card">
+        <img src="./Picture/pickup_airpot.png" alt="機場接機" />
+        <h3 style="margin-bottom: 0px">機場接機</h3>
+        <p style="margin-bottom: 5px; margin-top: 0px">Airport Pickup</p>
+        <a style="padding: 5px" href="#">了解更多</a>
+      </div>
+      <div class="service-card">
+        <img src="./Picture/ArriveYourCity.png" alt="陪同到目的城市" />
+        <h3 style="margin-bottom: 0px">陪同到目的城市</h3>
+        <p style="margin-bottom: 5px; margin-top: 0px">
+          Settle Down at Your City
+        </p>
+        <a style="padding: 5px" href="#">了解更多</a>
+      </div>
+      <div class="service-card">
+        <img src="./Picture/DailyNeed.png" alt="生活日常所需" />
+        <h3 style="margin-bottom: 0px">生活日常所需</h3>
+        <p style="margin-bottom: 5px; margin-top: 0px">Daily Needs</p>
+        <a style="padding: 5px" href="#">了解更多</a>
+      </div>
+    </section>
+
+    <!-- 首頁的相信遇晴內容 -->
+    <div class="believeV-section">
+      <h1 class="BelieveVtitle">相信遇晴 Believe V</h1>
+      <div class="grid">
+        <div class="card">
+          <img src="./Picture/台灣團隊.png" alt="Placeholder Image" />
+          <p class="text" style="margin: 0">
+            一手交由台灣團隊代辦<br />
+            <p class="text" style="margin: 0; text-align: right">
+              不怕語言不通！
+            </p>
+          </p>
+        </div>
+        <div class="card">
+          <p class="text" style="margin-bottom: 0; text-align: center">
+            無時無刻等待你～<br />全天候支援你的疑難雜症！
+          </p>
+          <img src="./Picture/無時無刻.png" alt="Placeholder Image" />
+        </div>
+        <div class="card">
+          <img src="./Picture/唯一c.png" alt="Placeholder Image" />
+          <p class="text" style="margin-top: 0; text-align: right">
+            此刻情有獨鍾<br />精通捷克留學小知識！
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 首頁的學校推薦和介紹 -->
+    <section class="recommend-section">
+      <div>
+        <div><h2>🌟推薦學校和科系🌟</h2></div>
+        <table>
+          <thead>
+            <tr>
+              <th style="text-align: center">🎓學校</th>
+              <th style="text-align: center">🎯主要推薦科系/特色領域</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                查理大學 🔗:<a
+                  href="https://cuni.cz/UKEN-1.html"
+                  target="_blank"
+                  title="Click!"
+                  >https://cuni.cz/UKEN-1.html</a
+                ><br />Charles University (CU)<br />📌
+                捷克最古老、規模最大的大學之一，擁有多達十幾個學院與研究單位，<br />學術領域涵蓋人文、醫學、理工、社會科學等各大領域。
+              </td>
+              <td>
+                ✅ 醫學與健康科學 (Medicine / General Medicine / Dentistry)<br />✅
+                理論與應用科學 (Mathematics & Physics)<br />✅ 社會科學與經濟
+                (Social Sciences)<br />✅ 資訊技術 (Information Technology)
+              </td>
+            </tr>
+            <tr>
+              <td>
+                布拉格理工大學 🔗:<a
+                  href="https://www.cvut.cz/en"
+                  target="_blank"
+                  title="Click!"
+                  >https://www.cvut.cz/en</a
+                ><br />Czech Techical University (CTU)<br />📌
+                捷克最古老的理工大學之一，強調工程、技術與創新領域，<br />是理工科學生熱門選擇。
+              </td>
+              <td>
+                ✅ 土木工程 (Civil Engineering) & 建築學 (Architecture)<br />✅
+                機械工程 (Mechanical Engineering) & 電機工程 (Electrical
+                Engineering)<br />✅ 核科學與物理工程 (Nuclear Sciences &
+                Physical Engineering)<br />✅ 運輸科學 (Transportation
+                Sciences)<br />✅ 生物醫學工程 (Biomedical Engineering)
+              </td>
+            </tr>
+            <tr>
+              <td>
+                布拉格經濟大學 🔗:<a
+                  href="https://www.vse.cz/english/"
+                  target="_blank"
+                  title="Click!"
+                  >https://www.vse.cz/english/</a
+                ><br />Prague University of Economics and Business (VŠE)<br />📌
+                捷克最大且最專精於商業與經濟領域的大學之一，<br />尤其適合想往經濟、金融、商業分析、數據經濟
+                方向發展的學生。
+              </td>
+              <td>
+                ✅ 財務與會計學院 (Finance & Accounting)<br />✅ 國際關係學院
+                (International Relations)<br />✅ 企業管理學院 (Business
+                Administration)<br />✅ 資訊與統計學院 (Informatics &
+                Statistics)
+              </td>
+            </tr>
+            <tr>
+              <td>
+                馬薩里克大學 🔗:<a
+                  href="https://www.muni.cz/en"
+                  target="_blank"
+                  title="Click!"
+                  >https://www.muni.cz/en</a
+                ><br />Masaryk University (MUNI)<br />📌
+                在生物、醫學、資訊科學、社會科學與經濟管理等領域都有強勢表現，<br />是一所以多學科見長的綜合大學。
+              </td>
+              <td>
+                ✅ 醫學與健康科學 (Faculty of Medicine)<br />✅ 科學學院
+                (Faculty of Science — Biology, Chemistry, Physics, Math)<br />✅
+                資訊學院 (Faculty of Informatics — Computer Science & AI)<br />✅
+                社會科學與人文 (Faculty of Social Studies、Faculty of Arts)<br />✅
+                經濟與行政管理 (Faculty of Economics and Administration)<br />✅
+                教育與體育科學 (Education, Sports Studies)
+              </td>
+            </tr>
+            <tr>
+              <td>
+                布爾諾理工大學 🔗:<a
+                  href="https://www.vut.cz/en"
+                  target="_blank"
+                  title="Click!"
+                  >https://www.vut.cz/en</a
+                ><br />Brno University of Technology(VUT/BUT)<br />📌
+                以工程與技術領域聞名，其機械與土木工程學科尤其受到學生與業界重視。
+              </td>
+              <td>
+                ✅ 土木工程學院 (Faculty of Civil Engineering)<br />✅
+                機械工程學院 (Faculty of Mechanical Engineering)<br />✅
+                化學學院 (Faculty of Chemistry)<br />✅ 建築與城市設計 (Faculty
+                of Architecture & Urban Design)<br />✅ 商業管理與會計 (Business
+                Administration and Accounting)
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 常見的QA -->
+    <section class="faq-section">
+      <div class="QAtitle">
+        <img src="./Picture/question-and-answer.png" alt="Q&A" />
+        <h2>常見 Q & A</h2>
+      </div>
+      <div class="faq-item">
+        <h3>
+          Q: 交換學校在布爾諾,離哪個機場比較近呢?
+          <span class="toggle-icon">▼</span>
+        </h3>
+        <p>
+          答案: 維也納機場(VIE)是比較近喔!
+          也有直達巴士或火車直接從維也納機場到布爾諾, 大約2個半小時就會到~
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>
+          Q: 帶美金還是歐元去會比較好?
+          <span class="toggle-icon">▼</span>
+        </h3>
+        <p>
+          答案: 基本上歐盟國家都以歐元為主要貨幣,捷克的當地貨幣是克朗,
+          但在台灣的銀行是無法直接換到克朗的,
+          因此若要帶現金到捷克換匯建議先在台灣兌換成歐元,
+          直接攜帶歐元到捷克當地兌換成客朗即可。
+        </p>
+        <p>
+          p.s
+          在歐洲當地建議如果能刷卡的地方盡量使用刷卡服務,克朗只在必須以現金支出的地方再使用比較划算~
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>
+          Q: 布拉格機場有免費的Wi-Fi嗎?
+          <span class="toggle-icon">▼</span>
+        </h3>
+        <p>答案: 布拉格機場是提供免費WiFi的！</p>
+        <p>
+          p.s 如果是路途中有到土耳其伊斯坦堡機場轉機的話,
+          只會有一個小時的免費Wi-Fi可以使用喔(考驗你手速的時候了~)
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>
+          Q: 如果學生簽證過期還能待在捷克嗎?
+          <span class="toggle-icon">▼</span>
+        </h3>
+        <p>
+          答案: 是可以的。台灣和所有的歐盟國家都有3個月的免簽,
+          因此即使你的學生簽證過期, 簽證也會自動轉為觀光免簽可再續待3個月。
+        </p>
+      </div>
+      <div class="faq-item">
+        <h3>
+          Q: 若在學生簽證效期前, 預先搭飛機入境捷克是可以的嗎?
+          <span class="toggle-icon">▼</span>
+        </h3>
+        <p>
+          答案: 當然可以！在學生簽證效期前,
+          入境任一歐盟國家都是以3個月的觀光簽證(免簽)資格入境的,
+          之後只需要注意回國時, 記得把提前到達的觀光簽證天數扣除,
+          總計不得超過3個月。
+        </p>
+      </div>
+    </section>
+
+    <!-- 填個人資料區 -->
+    <section class="form-section">
+      <div class="Consulting-icon">
+        <img
+          src="./Picture/consulting.png"
+          alt="免費諮詢"
+          class="Consulting-icon-img"
+        />
+        <h2>取得更多資訊</h2>
+      </div>
+      <h3>免費諮詢</h3>
+      <form id="infoForm" method="post">
+        <div class="input-group">
+          <label for="surname">姓氏:<span style="color: red">*</span></label>
+          <input
+            type="text"
+            id="surname"
+            name="surname"
+            placeholder="請輸入您的姓氏"
+            style="background-color: rgb(247, 247, 247)"
+            required
+          />
+          <small class="error-msg" id="surnameError"></small>
+        </div>
+        <div class="input-group">
+          <label for="firstname">名字:<span style="color: red">*</span></label>
+          <input
+            type="text"
+            id="firstname"
+            name="firstname"
+            placeholder="請輸入您的名字"
+            style="background-color: rgb(247, 247, 247)"
+            required
+          />
+          <small class="error-msg" id="firstnameError"></small>
+        </div>
+        <div class="input-group">
+          <label for="email">電子信箱:<span style="color: red">*</span></label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="請輸入您的電子信箱"
+            style="background-color: rgb(247, 247, 247)"
+            required
+          />
+          <small class="error-msg" id="emailError"></small>
+        </div>
+        <div class="input-group">
+          <label for="phone">手機:<span style="color: red">*</span></label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="請輸入您的手機"
+            inputmode="numeric"
+            maxlength="10"
+            pattern="^09[0-9]{8}$"
+            title="請輸入正確的手機號碼"
+            oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+            style="background-color: rgb(247, 247, 247)"
+            required
+          />
+          <small class="error-msg" id="phoneError"></small>
+        </div>
+        <div class="input-group full-width">
+          <label for="message">想諮詢內容:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="請在此填寫..."
+            style="background-color: rgb(247, 247, 247)"
+          ></textarea>
+        </div>
+        <div class="checkbox-group">
+          <input type="checkbox" id="agreement" name="agreement" checked />
+          <label for="agreement"
+            >是的,我同意遇晴捷克留學網使用我的個人訊息作為參考依據,並安全保障其個人隱私政策規定。</label
+          >
+        </div>
+        <!-- 提交按鈕 -->
+        <button type="submit" title="Click!">提交</button>
+      </form>
+    </section>
+
+    <!-- 公司聯絡資訊 -->
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <p style="margin-top: 0.5rem">營業時間: 星期一~星期五 (8am-10pm)</p>
+      <p>聯絡電話: (+886)985-985-577</p>
+      <p>
+        Email:
+        <a
+          href="https://mail.google.com/mail/u/0/#inbox?compose=new"
+          target="_blank"
+          title="Click!"
+          >virginia20000814@gmail.com</a
+        >
+      </p>
+      <p>地址: 高雄市梓官區大舍東路300巷50號</p>
+      <div class="socials">
+        <a
+          href="https://www.facebook.com/virginia20000814"
+          target="_blank"
+          title="Click!"
+          ><img src="./Picture/FB_icon.png" alt="Facebook"
+        /></a>
+        <a
+          href="https://www.instagram.com/virginia20000814"
+          target="_blank"
+          title="Click!"
+          ><img src="./Picture/Instagram_icon.png" alt="Instagram"
+        /></a>
+        <a href="https://line.me/ti/p/YcRfVG6OE8" target="_blank" title="Click!"
+          ><img src="./Picture/Line_icon.png" alt="Line"
+        /></a>
+        <a
+          href="https://api.whatsapp.com/send?phone=886985985677"
+          target="_blank"
+          title="Click!"
+          ><img src="./Picture/WhatsApp_icon.png" alt="whatsapp"
+        /></a>
+        <a
+          href="https://www.linkedin.com/in/yu-cing-fang-v1314520"
+          target="_blank"
+          title="Click!"
+          ><img src="./Picture/LinkedIn.png" alt="LinkedIn"
+        /></a>
+      </div>
+
+      <footer class="footer">
+        <p>個資隱私權保密政策，︀一切保留權利!</p>
+        <div class="Copyright">Copyright© Virginia™。版權所有。</div>
+      </footer>
+    </section>
+
+    <!-- QA和幻燈片的JS控制板 -->
+    <script>
+      // QA點擊變色控制板
+      document.querySelectorAll(".faq-item h3").forEach((item) => {
+        item.addEventListener("click", function () {
+          const faqItem = this.parentElement;
+          faqItem.classList.toggle("active");
+          const toggleIcon = this.querySelector(".toggle-icon");
+          toggleIcon.textContent = faqItem.classList.contains("active")
+            ? "▲"
+            : "▼";
+
+          // 只變更標題顏色，不變更圖示顏色
+          this.style.color = faqItem.classList.contains("active")
+            ? "#2885EA"
+            : "black";
+        });
+      });
+
+      // 幻燈片控制板
+      window.onload = function () {
+        let slideIndex = 1;
+        showSlide(slideIndex);
+
+        let prev = document.getElementById("prev");
+        prev.addEventListener("click", divideSlides, false);
+
+        let next = document.getElementById("next");
+        next.addEventListener("click", plusSlides, false);
+
+        const selectdot = document.querySelectorAll(".dot");
+        for (let i = 0; i < selectdot.length; i++) {
+          selectdot[i].addEventListener("click", function (e) {
+            showSlide((slideIndex = i + 1));
+          });
+        }
+
+        function plusSlides() {
+          showSlide((slideIndex += 1));
+        }
+
+        function divideSlides() {
+          showSlide((slideIndex -= 1));
+        }
+
+        function showSlide(num) {
+          let slides = document.getElementsByClassName("slide__item");
+          let dots = document.getElementsByClassName("dot");
+          if (num > slides.length) {
+            slideIndex = 1;
+          }
+
+          if (num < 1) {
+            slideIndex = slides.length;
+          }
+          for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (let i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace("active", "");
+          }
+
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+        }
+      };
+
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += "active";
+
+      setInterval(function () {
+        plusSlides();
+      }, 3000);
+
+      setInterval(function () {
+        history.go(0);
+      }, 60000);
+    </script>
+
+    <!-- 提交表單的動作和API --->
+    <script>
+      /**
+       * Google Apps Script Web App 的 API URL
+       * 此 URL 指向已部署的 Web App（需設定為「任何人可存取」）
+       */
+      const API_URL =
+        "https://script.google.com/macros/s/AKfycbzHVOKn2vLe6i5lmS5urnoA3EbzcW24vsK5pDy35d-GBKkCxnYcgu0-oefsIVOjyNwmWQ/exec";
+
+      /**
+       * 監聽表單送出事件
+       * 當使用者點擊「提交」按鈕時會觸發
+       */
+      document
+        .getElementById("infoForm")
+        .addEventListener("submit", function (e) {
+          // 阻止表單預設送出行為（避免頁面重新整理或跳轉）
+          e.preventDefault();
+
+          /**
+           * 建立 URLSearchParams 物件
+           * 這種格式會以 application/x-www-form-urlencoded 傳送資料
+           * 屬於「Simple Request」，不會觸發 CORS preflight
+           */
+          const formData = new URLSearchParams();
+
+          // 將表單欄位的值依序加入 formData
+          formData.append(
+            "surname",
+            document.getElementById("surname").value.trim(),
+          ); // 姓氏
+          formData.append(
+            "firstname",
+            document.getElementById("firstname").value.trim(),
+          ); // 名字
+          formData.append(
+            "email",
+            document.getElementById("email").value.trim(),
+          ); // 電子信箱
+          formData.append(
+            "phone",
+            document.getElementById("phone").value.trim(),
+          ); // 手機號碼
+          formData.append(
+            "agreement",
+            document.getElementById("agreement").checked,
+          ); // 是否同意條款（Boolean）
+
+          /**
+           * 使用 Fetch API 將表單資料送到 Google Apps Script
+           * 注意：
+           * - 不設定 headers
+           * - 不使用 JSON
+           * 這樣瀏覽器就不會送 OPTIONS preflight，可避免 CORS 問題
+           */
+          fetch(API_URL, {
+            method: "POST", // 使用 POST 方法
+            body: formData, // 直接傳送 URLSearchParams
+          })
+            /**
+             * 取得後端回傳的純文字內容
+             * （Apps Script 預設回傳 text）
+             */
+            .then((res) => res.text())
+
+            /**
+             * 成功收到後端回應後執行
+             * text 為後端實際回傳的內容
+             */
+            .then((text) => {
+              // 將後端回傳內容印到 Console，方便除錯或驗證
+              console.log("API response:", text);
+
+              // 顯示送出成功訊息給使用者
+              alert("送出成功！");
+
+              // 成功後清空表單內容
+              document.getElementById("infoForm").reset();
+            })
+
+            /**
+             * 當發生錯誤時（例如：
+             * - 網路中斷
+             * - API URL 錯誤
+             * - Web App 未正確部署）
+             * 就會進入這個區塊
+             */
+            .catch((err) => {
+              // 將錯誤資訊輸出到 Console，方便開發者除錯
+              console.error(err);
+
+              // 顯示錯誤提示給使用者
+              alert("系統錯誤，請稍後再試");
+            });
+        });
+    </script>
+
+    <!-- 姓 / 名 / 手機 / Email 必填共用驗證 --->
+    <script>
+      /* ===== 取得元素 ===== */
+      const form = document.getElementById("infoForm");
+
+      const surnameInput = document.getElementById("surname");
+      const surnameError = document.getElementById("surnameError");
+
+      const firstnameInput = document.getElementById("firstname");
+      const firstnameError = document.getElementById("firstnameError");
+
+      const phoneInput = document.getElementById("phone");
+      const phoneError = document.getElementById("phoneError");
+
+      const emailInput = document.getElementById("email");
+      const emailError = document.getElementById("emailError");
+
+      /* ===== 驗證規則 ===== */
+      const nameRegex = /^[A-Za-z\u4e00-\u9fa5\s]+$/;
+      const phoneRegex = /^09\d{8}$/;
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
+
+      /* ===== 即時過濾：姓 / 名 只留中英文字 ===== */
+      [surnameInput, firstnameInput].forEach((input) => {
+        input.addEventListener("input", function () {
+          this.value = this.value.replace(
+            /[^A-Za-z\u4e00-\u9fa5\u3105-\u3129\s]/g,
+            "",
+          );
+        });
+
+        input.addEventListener("blur", function () {
+          validateName(input);
+        });
+      });
+
+      /* ===== 手機 ===== */
+      phoneInput.addEventListener("input", function () {
+        this.value = this.value.replace(/[^0-9]/g, "");
+      });
+      phoneInput.addEventListener("blur", validatePhone);
+
+      /* ===== Email ===== */
+      emailInput.addEventListener("blur", validateEmail);
+
+      /* ===== 表單送出最後驗證 ===== */
+      form.addEventListener("submit", function (e) {
+        const isSurnameValid = validateName(surnameInput);
+        const isFirstnameValid = validateName(firstnameInput);
+        const isPhoneValid = validatePhone();
+        const isEmailValid = validateEmail();
+
+        if (
+          !isSurnameValid ||
+          !isFirstnameValid ||
+          !isPhoneValid ||
+          !isEmailValid
+        ) {
+          e.preventDefault();
+        }
+      });
+
+      /* ===== 驗證函式 ===== */
+      function validateName(input) {
+        const value = input.value.trim();
+        const errorEl = document.getElementById(`${input.id}Error`);
+
+        if (value === "") {
+          showError(input, errorEl, "此欄位為必填");
+          return false;
+        }
+
+        if (!nameRegex.test(value)) {
+          showError(input, errorEl, "只接受中英文及注音符號");
+          return false;
+        }
+
+        // 中文最多 30 字
+        const chineseChars = value.match(/[\u4e00-\u9fa5]/g) || [];
+        if (chineseChars.length > 30) {
+          showError(input, errorEl, "中文姓名最多 30 個字");
+          return false;
+        }
+
+        clearError(input, errorEl);
+        return true;
+      }
+
+      function validatePhone() {
+        const phone = phoneInput.value;
+
+        if (phone === "") {
+          showError(phoneInput, phoneError, "手機為必填欄位!");
+          return false;
+        }
+
+        if (!phoneRegex.test(phone)) {
+          showError(
+            phoneInput,
+            phoneError,
+            "請輸入正確的手機號碼（09 開頭，共 10 碼）",
+          );
+          return false;
+        }
+
+        clearError(phoneInput, phoneError);
+        return true;
+      }
+
+      function validateEmail() {
+        const email = emailInput.value.trim();
+
+        if (email === "") {
+          showError(emailInput, emailError, "電子信箱為必填欄位!");
+          return false;
+        }
+
+        if (!emailRegex.test(email)) {
+          showError(emailInput, emailError, "請輸入正確的電子信箱格式。");
+          return false;
+        }
+
+        clearError(emailInput, emailError);
+        return true;
+      }
+
+      /* ===== 共用錯誤顯示 ===== */
+      function showError(input, errorEl, message) {
+        errorEl.textContent = message;
+        errorEl.style.display = "block";
+        input.classList.add("input-error");
+      }
+
+      function clearError(input, errorEl) {
+        errorEl.textContent = "";
+        errorEl.style.display = "none";
+        input.classList.remove("input-error");
+      }
+
+      /* ===== 控制漢堡開關 ===== */
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          document.getElementById("nav-menu").classList.toggle("show");
+        });
+    </script>
+  </body>
+</html>
