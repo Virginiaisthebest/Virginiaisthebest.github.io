@@ -1,0 +1,259 @@
+/* ===== 全域設定 ===== */
+@font-face {
+  font-family: "myfont";
+  src: url(./fontfamily/JasonHandwriting4.ttf);
+}
+
+/* ===== 套用全部的格式(字體) ===== */
+* {
+  font-family: "myfont", DFkai-sb, sans-serif;
+}
+
+body {
+  margin: 0; /* 移除預設邊距 */
+  padding: 0;
+  font-family: "myfont", sans-serif; /* 字體 */
+  background: white; /* 整體背景色 */
+  overflow-x: hidden;
+}
+
+/* ===== 頂部標題列 ===== */
+.header {
+  background: #fff4d9; /* Header 背景色（淡米色） */
+  padding: 0 8px; /* 上下12px 左右30px 內距 */
+  display: flex; /* 使用 Flex 排版 */
+  align-items: center; /* 垂直置中 */
+  gap: 0.5rem; /* 內部元素間距（旗子與標題） */
+  font-weight: bold; /* 文字預設粗體 */
+  box-shadow: 0 10px 6px -6px #777; /* 頂部陰影效果 */
+  position: sticky; /* 頁面滾動時固定在頂部 */
+  top: 0;
+  z-index: 10;
+}
+
+/* ===== nav bar 捷克國旗圖片設定 ===== */
+.Czech-flag {
+  height: 3.2rem; /* 固定高度，寬度自動比例縮放 */
+}
+
+/* ===== 標題文字 ===== */
+.header h1 {
+  margin: 0; /* 移除預設 margin（避免頂部多空隙） */
+  font-size: 2.5rem; /* 標題大小（約40px） */
+  font-weight: 900; /* 極粗字重 */
+}
+
+/* ===== Back返回鍵容器設定 ===== */
+.back {
+  margin-left: auto; /* 推到最右側（Flex 排版關鍵） */
+}
+
+/* ===== Back返回鍵圖片設定 ===== */
+.back img {
+  height: 60px; /* 按鈕高度 */
+  transition: transform 0.2s ease; /* hover 動畫過渡 */
+}
+
+/* ===== Back返回鍵滑鼠移上去效果 ===== */
+.back img:hover {
+  transform: scale(1.15); /* 放大 115% */
+}
+
+/* ===== 介紹捷克簡介區塊設定 ===== */
+.intro-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* 讓圖片和文字上方對齊 */
+}
+
+/* ===== 介紹捷克簡介左邊文字容器設定 ===== */
+.intro-text {
+  width: 55%;
+}
+
+/* ===== 介紹捷克簡介左邊文字設定 ===== */
+.intro-text p {
+  margin: 0;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+/* ===== 介紹捷克簡介圖片容器設定 ===== */
+.top-picture {
+  width: 40%;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+/* ===== 介紹捷克簡介圖片設定 ===== */
+.top-intro-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* ===== 介紹捷克簡介的各小標題容器設定 ===== */
+.menu {
+  margin-top: 10px;
+}
+
+/* 每一列項目 */
+.menu li {
+  list-style: none; /* 移除圓點 */
+  display: flex; /* icon + 文字同排 */
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+
+  transition: transform 0.2s ease; /* 動畫速度 */
+}
+
+/* 滑鼠移上去時整組上移 */
+.menu li:hover {
+  transform: translateY(-4px); /* 往上移動 */
+}
+
+/* icon */
+.menu img {
+  width: 2rem;
+  height: 20px;
+}
+
+/* 文字 */
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-size: 1rem;
+  transition: color 0.2s;
+}
+
+/* hover文字變色 */
+.menu li:hover a {
+  color: #007acc;
+  font-weight: bolder;
+}
+
+/* ===== 介紹捷克簡介的各小標點擊滑順滾動效果 ===== */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== 各小標題共用樣式設定 ===== */
+.section-title {
+  margin: 30px 10px 15px; /* 上下距離 */
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: larger;
+  scroll-margin-top: 80px; /* ← 改成你的導覽列高度 */
+}
+
+/* ===== 各小標題的顏色設定 ===== */
+.blue {
+  background: #a6f0ee;
+}
+.yellow {
+  background: #f6eba0;
+}
+.pink {
+  background: #f4b9bb;
+}
+.purple {
+  background: #efb9f4;
+}
+.green {
+  background: #c1ffd6;
+}
+
+/* ===== 小標題一: 捷克在哪裡icon設定 ===== */
+.czech-location-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+/* ===== 捷克google地圖區塊設定 ===== */
+.czech-google-map {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* ===== 捷克google地圖設定 ===== */
+.czech-google-map iframe {
+  border: none; /* 移除邊框 */
+  border-radius: 10px; /* 圓角 */
+}
+
+/* ===== 小標題二: 選擇捷克icon設定 ===== */
+.choose-czech-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+/* ===== 選擇捷克右文區塊 ===== */
+.row {
+  display: flex; /* 橫向排列 */
+  gap: 20px;
+}
+
+/* ===== 選擇捷克左圖容器設定 ===== */
+.choose-czech-left-img {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+/* ===== 選擇捷克左圖設定 ===== */
+.choose-czech-left-image-pic {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* ===== 選擇捷克右側文字設定 ===== */
+.right-text {
+  flex: 1; /* 剩餘空間 */
+}
+
+/* ===== 小標題三: 生活與文化體驗icon設定 ===== */
+.life-culture-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+/* ===== 生活與文化體驗三欄圖片區設定 ===== */
+.grid {
+  margin: 0 10px;
+  display: flex;
+  gap: 20px;
+}
+
+/* ===== 小標題四: 飲食習慣每張卡片設定 ===== */
+.card {
+  flex: 1; /* 平均分配 */
+  height: 180px;
+  background: #777;
+  border-radius: 10px;
+}
+
+/* ===== 飲食習慣icon設定 ===== */
+.food-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+/* ===== 飲食習慣文字段落 ===== */
+.paragraph {
+  margin: 10px 16px;
+}
+
+/* ===== 小標題五: 四季與氣候適應icon設定 ===== */
+.weather-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
